@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(4, 4, 52);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.total {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-area {
+  border-radius: 10px;
+}
+
+legend {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgb(67, 5, 124);
+  border: none;
+  color: #fff;
+}
+
+.transactions-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.transactions-list li {
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: blue;
+}
+
+.desc textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.empty-transactions {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .details {
+    flex-direction: row;
+    gap: 7%;
+  }
+
+  .transaction-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .total {
+    font-size: 1.5rem;
+  }
+}
